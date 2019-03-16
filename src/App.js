@@ -66,6 +66,8 @@ export default App;
 */
 
 import React, { Component } from "react";
+import NavBar from "./components/navbar";
+
 const foodexpenditureItems = [
   {
     id: 1,
@@ -77,7 +79,7 @@ const foodexpenditureItems = [
     id: 2,
     date: "2019-03-15",
     name: "Test Item 2",
-    price: 12.0
+    price: 12.01
   }
 ];
 class App extends Component {
@@ -94,9 +96,9 @@ class App extends Component {
         key={item.id}
         className="list-group-item d-flex justify-content-between align-items-center"
       >
-        <span className={`foodexpenditure-title mr-2`}>{item.date}</span>
-        <span className={`foodexpenditure-title mr-2`}>{item.name}</span>
-        <span className={`foodexpenditure-title mr-2`}>{item.price}</span>
+        <span className={"col-sm"}>{item.date}</span>
+        <span className={"col-sm"}>{item.name}</span>
+        <span className={"col-sm"}>{item.price}</span>
         <span>
           <button className="btn btn-secondary mr-2"> Edit </button>
           <button className="btn btn-danger">Delete </button>
@@ -110,8 +112,9 @@ class App extends Component {
         <h1 className="text-white text-center my-4">
           Food Expenditure Tracking App
         </h1>
+        <NavBar />
         <div className="row">
-          <div className="col-md-12 col-sm-10 mx-auto p-0">
+          <div className="col-md-10 col-sm-10 mx-auto p-0">
             <div className="card p-3">
               <div className="add-item-button">
                 <button className="btn btn-primary">Add Item</button>

@@ -8,9 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1e3563;
 }
-.foodexpenditure-title {
-  cursor: pointer;
-}
+
 .tab-list > span {
   padding: 5px 8px;
   border: 1px solid #282c34;
