@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and clean web application to track your food expenses
 
 ## Available Scripts
 
