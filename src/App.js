@@ -67,6 +67,7 @@ export default App;
 
 import React, { Component } from "react";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 
 const foodexpenditureItems = [
   {
@@ -109,9 +110,6 @@ class App extends Component {
   render() {
     return (
       <main className="content">
-        <h1 className="text-white text-center my-4">
-          Food Expenditure Tracking App
-        </h1>
         <NavBar />
         <div className="row">
           <div className="col-md-10 col-sm-10 mx-auto p-0">
@@ -125,6 +123,7 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <Footer />
       </main>
     );
   }

@@ -15,13 +15,13 @@ import {
 const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home">Food Expense Tracker v1.0</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav.Link href="#link">Help</Nav.Link>
+          <NavDropdown title="Menu" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
               Another action
@@ -34,7 +34,11 @@ const NavBar = () => {
           </NavDropdown>
         </Nav>
         <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <FormControl
+            type="text"
+            placeholder="Enter Food Item..."
+            className="mr-sm-2"
+          />
           <Button variant="outline-success">Search</Button>
         </Form>
       </Navbar.Collapse>
